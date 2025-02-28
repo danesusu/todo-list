@@ -90,7 +90,7 @@ ul li.check::before{
 }
 ul li span{
     position: absolute;
-    right: 0;
+    right: 10;
     width: 40px;
     height: 40px;
     font-size: 20px;
