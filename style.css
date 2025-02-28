@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(140deg,#153677,#4e085f);
+  padding: 10px;
+}
+.todoapp{
+    width: 500px;
+    max-height: 600px;
+    background: #fff;
+    margin: 100px auto 30px;
+    padding: 50px 40px 80px;
+    border-radius: 10px;
+    user-select: none;
+    
+}
+.todoapp h2{
+    color: #002765;
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todoapp h2 img {
+    width: 40px;
+    margin-left: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#efeed0;
+    border-radius: 30px;
+    padding-left:20px;
+    margin-bottom: 30px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding:0;
+}
+.row button {
+    border: none;
+    outline: none;
+    padding: 20px 30px;
+    background: #153677;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 15px;
+    padding: 15px 10px  0px 40px;
+    user-select: none;
+    cursor: pointer;
+    position:relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(circle.png);
+    background-size: cover;
+    background-position: center;
+    top: 15px;
+    left: 1px;
+}
+ul li.edit::-ms-ticks-before{
+    background-image: url(edit.png);
+}
+
+ul li.check{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.check::before{
+    background-image: url(check.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color:rgb(4, 4, 6);
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+ul li span:hover{
+background: red;
+border-radius: 50%;
+}
+ul li button{
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+   margin-left: 50px;
+}
